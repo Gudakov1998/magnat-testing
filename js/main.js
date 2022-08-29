@@ -4,31 +4,27 @@ $(document).ready(() => {
         animateClass: 'animate__animated',
     }).init();
 
-    $('.').slick({
+    $('.main__container .main__slider_items').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
         fade: true,
-        dots: true,
+        dots: false,
     });
 
 
-    $('.prev').click(function () {
-        $('.').slick('slickPrev');
+    $('.prev-btn').click(function () {
+        $('.main__slider_items').slick('slickPrev');
 
     });
 
-    $('.next').click(function () {
-        $('.').slick('slickNext');
+    $('.next-btn').click(function () {
+        $('.main__slider_items').slick('slickNext');
 
     });
 
     $('.header__burger').click(function () {
         $('.').css('display', 'block');
-    });
-
-    $('.close').click(function () {
-        $('.').css('display', 'none');
     });
 
 
