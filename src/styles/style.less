@@ -1,15 +1,15 @@
 @font-face {
-  font-family: "Myriad bold";
+  font-family: "Gilroy Regular";
+  src: url("../fonts/gilroy-regular.ttf");
+}
+
+@font-face {
+  font-family: "";
   src: url("../fonts/");
 }
 
 @font-face {
-  font-family: "Myriad regular";
-  src: url("../fonts/");
-}
-
-@font-face {
-  font-family: "Myriad light";
+  font-family: "";
   src: url("../fonts/");
 }
 
@@ -27,6 +27,135 @@ p{
 }
 
 //MAIN PAGE
+
+.main-wrapper{
+  background-image: url("../../images/main.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+
+  .header{
+    .header__container{
+      max-width: 1290px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+
+      .header__logo{
+        .header__logo_item{
+          width: 186px;
+          height: 139px;
+        }
+      }
+
+      .header__nav{
+        margin-top: 27px;
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        width: 923px;
+        height: 68px;
+        border-radius: 56px;
+        padding-left: 32px;
+        padding-right: 32px;
+
+        .nav-item{
+          align-items: center;
+          vertical-align: middle;
+          padding-top: 22px;
+
+          .nav__item_link{
+            font-family: "Gilroy Regular", Arial, sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            color: #141414;
+            text-decoration: none;
+            &:hover{
+              color: #8DBB11;
+              cursor: pointer;
+            }
+          }
+
+          .dropdown{
+            float: left;
+            overflow: hidden;
+
+            .dropdown-img{
+              vertical-align: middle;
+              align-items: center;
+              transform: rotateX(180deg);
+            }
+            &:hover{
+              .dropdown-img{
+                transform: rotateX(0deg);
+              }
+              .dropdown-content{
+                display: block;
+              }
+              .dropbtn{
+                color: #8DBB11;
+              }
+            }
+
+            .dropdown-content{
+              display: none;
+              position: absolute;
+              width: 147px;
+              height: 111px;
+              border-radius: 24px;
+              z-index: 9999999999;
+              background-color: #ffffff;
+              margin-top: 40px;
+              margin-left: -33px;
+              padding-top: 24px;
+              padding-left: 24px;
+
+
+              .dropdown__link{
+                float: none;
+                padding: 12px 16px 12px 7px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+                font-family: "Gilroy Regular", Arial, sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                color: #141414;
+                &:hover{
+                  color: #8DBB11;
+                }
+              }
+            }
+
+            .dropbtn{
+              border: none;
+              outline: none;
+              background-color: inherit;
+              margin: 0;
+              font-family: "Gilroy Regular", Arial, sans-serif;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              color: #141414;
+
+            }
+
+
+          }
+        }
+
+        .header__burger{
+          padding-top: 17px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+
 
 
 
